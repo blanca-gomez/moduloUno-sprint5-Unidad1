@@ -1,13 +1,46 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color:#98EA7C;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
+  font-size: 50px;
   text-align: center;
   color: #333;
+  margin: 3px; 
 }
 
+#listaUsuarios{
+  background-color:#98EA7C;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listUsers{
+  background-color: #C8DCC1;
+  list-style: none;
+  width:300px;
+  margin: 5px;
+  padding: 20px;
+  border:6px; border-style: double;
+  border-color: #16390B;
+}
+
+.image {
+  width: 80px;
+  border:1px solid black;
+  float:right;
+}
+.listUsers p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.listUsers p::before{
+  content: attr(data-label);
+  font-weight: bold;
+}
 
